@@ -1,0 +1,151 @@
+/* - Typography - */
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+/* font-family: 'Karla', sans-serif; */
+/* - VARIABLES - */
+/* -- COLOURS -- */
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, p {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e5eff5;
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+h1 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.125rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  font-size: .825rem;
+  color: #e5eff5;
+  margin-bottom: 8px;
+}
+
+.container {
+  width: 85vw;
+  max-width: 375px;
+  height: 100vh;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.community .join {
+  padding: 32px 24px;
+  max-width: 311px;
+  border-radius: 6px 6px 0 0;
+  background-color: white;
+}
+
+.community .join .join__title {
+  color: #2ab2af;
+  margin-bottom: 28px;
+}
+
+.community .join .join__sub-title {
+  font-weight: 700;
+  color: #c0df34;
+  margin-bottom: 25px;
+}
+
+.community .join .join__desc {
+  font-size: 0.825rem;
+  font-weight: 400;
+  color: #98a6bd;
+  line-height: 1.8;
+}
+
+.signup .subscribe {
+  padding: 28px 24px;
+  max-width: 311px;
+  background-color: #2ab2af;
+}
+
+.signup .subscribe .subscribe__title {
+  color: white;
+  margin-bottom: 22px;
+}
+
+.signup .subscribe .subscribe__price {
+  color: #e5eff5;
+  margin-bottom: 16px;
+}
+
+.signup .subscribe .subscribe__price .lg {
+  font-size: 2rem;
+  color: white;
+}
+
+.signup .subscribe .subscribe__desc {
+  color: white;
+  margin-bottom: 30px;
+}
+
+.signup .subscribe .subscribe__btn {
+  width: 263px;
+  height: 48px;
+  background-color: #c0df34;
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  border: 0;
+  border-radius: 4px;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.signup .whyus {
+  padding: 28px 24px;
+  max-width: 311px;
+  background-color: #4bbebc;
+  border-radius: 0 0 6px 6px;
+}
+
+.signup .whyus .whyus__title {
+  color: white;
+  margin-bottom: 24px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=style.css.map */

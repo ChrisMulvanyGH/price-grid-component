@@ -1,0 +1,160 @@
+/* - Typography - */
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+/* font-family: 'Karla', sans-serif; */
+
+/* - VARIABLES - */
+$mobile: 375px;
+$desktop: 1440px;
+
+/* -- COLOURS -- */
+$cyan: hsl(179, 62%, 43%);
+$lightCyan: hsl(179, 47%, 52%);
+$brightYellow: hsl(71, 73%, 54%);
+$lightGray: hsl(204, 43%, 93%);
+$grayishBlue: hsl(218, 22%, 67%);
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, p {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $lightGray;
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.125rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+ul {
+    list-style-type: none;
+
+    li {
+        font-size: .825rem;
+        color: $lightGray;
+        margin-bottom: 8px;
+    }
+}
+
+
+.container {
+    width: 85vw;
+    max-width: $mobile;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.community {
+    
+    .join {
+        padding: 32px 24px;
+        max-width: 311px;
+        border-radius: 6px 6px 0 0;
+        background-color: white;
+
+        .join__title {
+            color: $cyan;
+            margin-bottom: 28px;
+        }
+
+        .join__sub-title {
+            font-weight: 700;
+            color: $brightYellow;
+            margin-bottom: 25px;
+        }
+
+        .join__desc {
+            font-size: 0.825rem;
+            font-weight: 400;
+            color: $grayishBlue;
+            line-height: 1.8;
+        }
+    }
+}
+
+.signup {
+
+    .subscribe {
+        padding: 28px 24px;
+        max-width: 311px;
+        background-color: $cyan;
+
+        .subscribe__title {
+            color: white;
+            margin-bottom: 22px;
+        }
+
+        .subscribe__price {
+            color: $lightGray;
+            margin-bottom: 16px;
+
+            .lg {
+                font-size: 2rem;
+                color: white;
+            }
+        }
+
+        .subscribe__desc {
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        .subscribe__btn {
+            width: 263px;
+            height: 48px;
+            background-color: $brightYellow;
+            font-family: 'Karla', sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            color: white;
+            border: 0;
+            border-radius: 4px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        }
+    }
+
+    .whyus {
+        padding: 28px 24px;
+        max-width: 311px;
+        background-color: $lightCyan;
+        border-radius: 0 0 6px 6px;
+
+        .whyus__title {
+            color: white;
+            margin-bottom: 24px;
+        }
+    }
+    
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
