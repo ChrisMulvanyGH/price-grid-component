@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://chrismulvanygh.github.io/price-grid-component/)
+- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc/hub/mobile-first-sass-flexbox-single-price-grid-component-rJu2gJd89)
+- Live Site URL: [Single Price Grid Component](https://chrismulvanygh.github.io/price-grid-component/)
 
 ## My process
 
