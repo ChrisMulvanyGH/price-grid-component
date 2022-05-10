@@ -63,9 +63,15 @@ ul li {
           justify-content: center;
 }
 
+.community {
+  width: 100%;
+  max-width: 311px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
 .community .join {
   padding: 32px 24px;
-  max-width: 311px;
   border-radius: 6px 6px 0 0;
   background-color: white;
 }
@@ -83,14 +89,27 @@ ul li {
 
 .community .join .join__desc {
   font-size: 0.825rem;
-  font-weight: 400;
   color: #98a6bd;
   line-height: 1.8;
 }
 
-.signup .subscribe {
-  padding: 28px 24px;
+.signup {
+  width: 100%;
   max-width: 311px;
+  margin-bottom: 24px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.signup .subscribe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 28px 24px;
   background-color: #2ab2af;
 }
 
@@ -115,7 +134,11 @@ ul li {
 }
 
 .signup .subscribe .subscribe__btn {
-  width: 263px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 100%;
+  max-width: 260px;
   height: 48px;
   background-color: #c0df34;
   font-family: 'Karla', sans-serif;
@@ -140,12 +163,75 @@ ul li {
   margin-bottom: 24px;
 }
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
+footer {
+  width: 100%;
+  max-width: 311px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.attribution a {
-  color: #3e52a3;
+footer .attribution {
+  font-size: 11px;
+  font-weight: 700;
+  text-align: center;
+  color: #2ab2af;
+}
+
+footer .attribution a {
+  color: #98a6bd;
+}
+
+/* - MEDIA QUERIES - */
+@media (min-width: 1440px) {
+  .container {
+    width: 100vw;
+    max-width: 1440px;
+    height: 100vh;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .community {
+    width: 100%;
+    max-width: 635px;
+  }
+  .community .join {
+    padding-right: 40px;
+  }
+  .community .join .join__desc {
+    font-size: 1rem;
+  }
+  .signup {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    min-width: 635px;
+  }
+  .signup .subscribe {
+    width: 50%;
+    min-width: 317.5px;
+    border-radius: 0 0 0 6px;
+  }
+  .signup .whyus {
+    width: 50%;
+    min-width: 317.5px;
+    border-radius: 0 0 6px 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */

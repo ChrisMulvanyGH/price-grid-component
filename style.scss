@@ -68,10 +68,12 @@ ul {
 }
 
 .community {
-    
+    width: 100%;
+    max-width: 311px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+
     .join {
         padding: 32px 24px;
-        max-width: 311px;
         border-radius: 6px 6px 0 0;
         background-color: white;
 
@@ -88,7 +90,6 @@ ul {
 
         .join__desc {
             font-size: 0.825rem;
-            font-weight: 400;
             color: $grayishBlue;
             line-height: 1.8;
         }
@@ -96,10 +97,15 @@ ul {
 }
 
 .signup {
+    width: 100%;
+    max-width: 311px;
+    margin-bottom: 24px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 
     .subscribe {
+        display: flex;
+        flex-direction: column;
         padding: 28px 24px;
-        max-width: 311px;
         background-color: $cyan;
 
         .subscribe__title {
@@ -123,7 +129,9 @@ ul {
         }
 
         .subscribe__btn {
-            width: 263px;
+            align-self: center;
+            width: 100%;
+            max-width: 260px;
             height: 48px;
             background-color: $brightYellow;
             font-family: 'Karla', sans-serif;
@@ -147,14 +155,68 @@ ul {
             margin-bottom: 24px;
         }
     }
+}
+
+footer {
+    width: 100%;
+    max-width: 311px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .attribution { 
+        font-size: 11px; 
+        font-weight: 700;
+        text-align: center; 
+        color: $cyan;
+    }
     
+    .attribution a { 
+        color: $grayishBlue; 
+    }
 }
 
-.attribution { 
-    font-size: 11px; 
-    text-align: center; 
-}
+/* - MEDIA QUERIES - */
+@media (min-width: 1440px) {
+    .container {
+        width: 100vw;
+        max-width: $desktop;
+        height: 100vh;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
+    .community {
+        width: 100%;
+        max-width: 635px;
+
+        .join {
+            padding-right: 40px;
+            .join__desc {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .signup {
+        display: flex;
+        width: 100%;
+        min-width: 635px;
+
+        .subscribe {
+            width: 50%;
+            min-width: 317.5px;
+            border-radius: 0 0 0 6px;
+        }
+
+        .whyus {
+            width: 50%;
+            min-width: 317.5px;
+            border-radius: 0 0 6px 0;
+        }
+    }
+
+
 }
