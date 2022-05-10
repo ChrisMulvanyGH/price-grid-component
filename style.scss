@@ -116,12 +116,17 @@ ul {
         }
 
         .subscribe__price {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
             color: $lightGray;
             margin-bottom: 1em;
 
             .lg {
                 font-size: 2rem;
+                font-weight: 700;
                 color: white;
+                margin-right: 0.5em;
             }
         }
 
@@ -202,6 +207,13 @@ footer {
 
         .join {
             padding-right: 2.5em;
+
+            .join__title {
+                margin-bottom: 1.25em;
+            }
+            .join__sub-title {
+                margin-bottom: 0.75em;
+            }
             .join__desc {
                 font-size: 1rem;
             }
