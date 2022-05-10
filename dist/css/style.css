@@ -119,13 +119,24 @@ ul li {
 }
 
 .signup .subscribe .subscribe__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #e5eff5;
   margin-bottom: 1em;
 }
 
 .signup .subscribe .subscribe__price .lg {
   font-size: 2rem;
+  font-weight: 700;
   color: white;
+  margin-right: 0.5em;
 }
 
 .signup .subscribe .subscribe__desc {
@@ -218,6 +229,12 @@ footer .attribution a {
   }
   .community .join {
     padding-right: 2.5em;
+  }
+  .community .join .join__title {
+    margin-bottom: 1.25em;
+  }
+  .community .join .join__sub-title {
+    margin-bottom: 0.75em;
   }
   .community .join .join__desc {
     font-size: 1rem;
